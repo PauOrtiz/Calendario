@@ -13,15 +13,17 @@
   justify-content:center;
 }
 
-
-.mes .imagen{
-   
+.mes{
+  width:350px;
+  margin:0.5%;
+}
+ .imagen{
   width: 100%;
-  transform: scale(1);
-  -ms-transform: scale(1);
-  -moz-transform: scale(1);
-  -webkit-transform: scale(1);
-  -o-transform: scale(1);
+  transform: scale(0.7);
+  -ms-transform: scale(0.7);
+  -moz-transform: scale(0.7);
+  -webkit-transform: scale(0.7);
+  -o-transform: scale(0.7);
   -webkit-transition: all 500ms ease-in-out;
   -moz-transition: all 500ms ease-in-out;
   -ms-transition: all 500ms ease-in-out;
@@ -29,10 +31,12 @@
 }
 
 .mes:hover .imagen{
-  transform: scale(0.5);
-  -ms-transform: scale(0.5);
-  -moz-transform: scale(0.5);
-  -webkit-transform: scale(0.5);
-  -o-transform: scale(0.5);
+  transform: scale(1);
+  -ms-transform: scale(1);
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  -o-transform: scale(1);
 }
  
+
+
