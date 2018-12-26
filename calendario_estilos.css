@@ -1,0 +1,18 @@
+*{
+  background-color:black;
+}
+
+.Título{
+  color:red;
+  text-align:center;
+}
+.contenedor{
+  display:flex;
+  flex-wrap:wrap;/*los elementos fluyen en múltiples líneas*/
+  flex-direction:row;
+  justify-content:space-around;
+}
+.mes{
+  background-color:pink;
+  margin:10%;   
+}
