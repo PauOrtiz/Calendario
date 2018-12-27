@@ -1,9 +1,11 @@
-*{
-  background-color:black;
+*{ /*anula las distancias predefinidas por el navegador*/
+  background-color:#0D0D0D;
+  margin: 0;
+  padding: 0;
 }
 
 .Título{
-  color:red;
+  color:#E80C7A;
   text-align:center;
   font-family: 'Oswald', sans-serif;
   font-size:4rem;
@@ -18,7 +20,7 @@
 .contenedor:hover .flipper{/*voltea el panel al colocar el mouse*/
   transform:rotateY(180deg);
 }
-.mes,#front,.back {
+.mes,#front, .back {
   width:350px;
   margin:0.5%; 
 }
@@ -36,7 +38,7 @@
   transform:rotateY(180deg);  
 }
 #texto{
-  color:yellow;
+  color:#16C9CF;
   text-align:center;
   font-family: 'Staatliches', cursive;
 }
