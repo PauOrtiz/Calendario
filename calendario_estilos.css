@@ -11,11 +11,20 @@
   flex-wrap:wrap;/*los elementos fluyen en múltiples líneas*/
   flex-direction:row;
   justify-content:center;
+  perspective:1000;
+}
+.contenedor:hover .flipper{
+  transform:rotateY(180deg);
 }
 
-.mes{
+.mes .back{
   width:350px;
-  margin:0.5%;
+  margin:0.5%; 
+}
+.flipper{ /*velocidad del giro*/
+  transition: 1.90s;
+    transform-style: preserve-3d;
+    position: relative;
 }
  .imagen{
   width: 100%;
@@ -37,6 +46,4 @@
   -webkit-transform: scale(1);
   -o-transform: scale(1);
 }
- 
-
 
