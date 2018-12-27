@@ -13,30 +13,41 @@
   justify-content:center;
   perspective:1000;
 }
-.contenedor:hover .flipper{
+.contenedor:hover .flipper{/*voltea el panel al colocar el mouse*/
   transform:rotateY(180deg);
 }
-
-.mes .back{
+.mes,#front,.back {
   width:350px;
   margin:0.5%; 
 }
 .flipper{ /*velocidad del giro*/
   transition: 1.90s;
     transform-style: preserve-3d;
-    position: relative;
+}
+#front, .back{ /*oculta panel de atrás durante cambio*/
+  backface-visibility: hidden;
+}
+.front{ /*envia al panel frontal a atrás*/
+  z-index:2;
+}
+.back{ /*evita que en el flip al dar vuelta se vea feo*/
+  transform:rotateY(180deg); 
+}
+#texto{
+  color:yellow;
+  text-align:center;
 }
  .imagen{
   width: 100%;
-  transform: scale(0.7);
-  -ms-transform: scale(0.7);
-  -moz-transform: scale(0.7);
-  -webkit-transform: scale(0.7);
-  -o-transform: scale(0.7);
-  -webkit-transition: all 500ms ease-in-out;
-  -moz-transition: all 500ms ease-in-out;
-  -ms-transition: all 500ms ease-in-out;
-  -o-transition: all 500ms ease-in-out;
+  transform: scale(0.45);
+  -ms-transform: scale(0.45);
+  -moz-transform: scale(0.45);
+  -webkit-transform: scale(0.45);
+  -o-transform: scale(0.45);
+  -webkit-transition: all 600ms ease-in-out;
+  -moz-transition: all 600ms ease-in-out;
+  -ms-transition: all 600ms ease-in-out;
+  -o-transition: all 600ms ease-in-out;
 }
 
 .mes:hover .imagen{
